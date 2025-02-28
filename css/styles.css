@@ -1,0 +1,158 @@
+/*Author: Jaisharan Ashok Kumar
+  Date: 02/27/2025
+  Filename: styles.css*/
+
+/*CSS Reset*/
+
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h3 ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Style rules for body and images*/
+
+body {
+    background-color: #f6eee4;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*Style rules for mobile viewport*/
+
+
+/*Style rules to show mobile class and hide tab-desk class*/
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+/*Style rules for header area*/
+.mobile h1 {
+    padding: 2%;
+    text-align: center;
+    font-family: Emblema One;
+}
+
+.mobile h3 {
+    padding: 2%;
+    text-align: center;
+    font-family: Lora;
+}
+
+/*Style rules for navigation area*/
+
+nav {
+    background-color: #2a1f14;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    border-top: 0.5px #f6eee4;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    text-decoration: none;
+    padding: 0.5em 2em 0.5em 2em;
+}
+
+/*Style rules for main content*/
+
+main {
+    padding: 2%;
+    font-family: Lora;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main h3 {
+    padding-top: 2%;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+.link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.round {
+    border-radius: 6px;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
+#contact {
+    text-align: center;
+}
+
+.tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Style rules for footer content*/
+
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}
