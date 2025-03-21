@@ -1,10 +1,20 @@
 /*Author: Jaisharan Ashok Kumar
-  Date: 3/20/25
+  Date: 3/13/25
   Filename: styles.css*/
 
-  /*CSS Reset*/
+/*CSS Reset*/
 
-body, header, nav, main, footer, img, h1, h3 ul, aside, figure, figcaption {
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h3 ul,
+aside,
+figure,
+figcaption {
     margin: 0;
     padding: 0;
     border: 0;
@@ -25,11 +35,11 @@ img {
 
 
 /*Style rules to show mobile class and hide tab-desk class*/
-.mobile, .mobile-tablet {
+.mobile {
     display: block;
 }
 
-.tab-desk, .desktop {
+.tab-desk {
     display: none;
 }
 
@@ -45,6 +55,7 @@ img {
     text-align: center;
     font-family: Lora;
 }
+
 /*Style rules for navigation area*/
 
 nav {
@@ -130,7 +141,7 @@ figcaption {
     margin-left: 10%;
 }
 
-#contact, #form h2 {
+#contact {
     text-align: center;
 }
 
@@ -148,31 +159,6 @@ figcaption {
     color: #f6eee4;
     text-decoration: none;
     font-weight: bold;
-}
-
-/*Syle rules for form elements*/
-fieldset, input, textarea {
-    margin-bottom: 2%;
-}
-
-fieldset {
-    font-weight: bold;
-    font-size: 1.25em;
-}
-
-label {
-    display: block;
-    padding-top: 2%;
-}
-
-#submit {
-    margin: 0 auto 0 auto;
-    display: block;
-    padding: 2%;
-    background-color: #78593a;
-    color: #f6eee4;
-    font-size: 1.25em;
-    border-radius: 10px;
 }
 
 /*Style rules for footer content*/
@@ -194,7 +180,9 @@ footer a {
 }
 
 /*Media Query for Tablet Viewport*/
-@media screen and (min-width: 645px), print {
+@media screen and (min-width: 645px),
+print {
+
     /*Show tab-desk class, hide mobile class*/
     .tab-desk {
         display: block;
@@ -224,25 +212,13 @@ footer a {
     aside {
         grid-column: 1 / span 2;
     }
-
-    /*Tablet Viewport: Style rule for form element*/
-    form {
-        width: 70%;
-        margin: 0 auto 0 auto;
-    }
 }
 
 /*Media Query for Desktop Viewport*/
-@media screen and (min-width: 1045px), print {
-    /*Desktop Viewport: Show desktop class, hide mobile-tablet class*/
-    .desktop {
-        display: block;
-    }
+@media screen and (min-width: 1045px),
+print {
 
-    .mobile-tablet {
-        display: none;
-    }
-
+    /*Desktop Viewport: Style rules for nav area*/
     nav li {
         font-size: 1.5em;
     }
@@ -271,49 +247,6 @@ footer a {
         grid-column: 1 / span 3;
         font-size: 2em;
     }
-
-    /*Style rules for table */
-    table {
-        border: 1px solid #2a1f14;
-        border-collapse: collapse;
-        margin: 0 auto 0 auto;
-    }
-
-    caption {
-        font-size: 1.5em;
-        font-weight: bold;
-        padding: 1%;
-    }
-
-    th, td {
-        border: 1px solid #2a1f14;
-        padding: 1%;
-    }
-
-    th {
-        background-color: #2a1f14;
-        color: white;
-        font-size: 1.15em;
-    }
-
-    tr:nth-child(odd) {
-        background-color: #deccba;
-    }
-
-    /*Desktop Viewport: Style rules for form elements*/
-    form {
-        width: auto;
-    }
-
-    .form-grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 20px;
-    }
-
-    .btn {
-        grid-column: 1 / span 2;
-    }
 }
 
 /*Media Query for Large Desktop Viewports*/
@@ -321,7 +254,7 @@ footer a {
     body {
         background: linear-gradient(#f6eee4, #78593a);
     }
-    
+
     #wrapper {
         width: 1920px;
         margin: 0 auto 0 auto;
