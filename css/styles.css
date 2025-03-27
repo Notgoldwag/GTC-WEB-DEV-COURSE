@@ -1,10 +1,21 @@
 /*Author: Jaisharan Ashok Kumar
-  Date: 3/20/25
+  Date: 3/27/25
   Filename: styles.css*/
 
-  /*CSS Reset*/
+/*CSS Reset*/
 
-body, header, nav, main, footer, img, h1, h3 ul, aside, figure, figcaption {
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h3 ul,
+aside,
+figure,
+figcaption,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -16,7 +27,8 @@ body {
     background-color: #f6eee4;
 }
 
-img {
+img,
+video {
     max-width: 100%;
     display: block;
 }
@@ -25,11 +37,13 @@ img {
 
 
 /*Style rules to show mobile class and hide tab-desk class*/
-.mobile, .mobile-tablet {
+.mobile,
+.mobile-tablet {
     display: block;
 }
 
-.tab-desk, .desktop {
+.tab-desk,
+.desktop {
     display: none;
 }
 
@@ -45,6 +59,7 @@ img {
     text-align: center;
     font-family: Lora;
 }
+
 /*Style rules for navigation area*/
 
 nav {
@@ -130,7 +145,8 @@ figcaption {
     margin-left: 10%;
 }
 
-#contact, #form h2 {
+#contact,
+#form h2 {
     text-align: center;
 }
 
@@ -151,7 +167,9 @@ figcaption {
 }
 
 /*Syle rules for form elements*/
-fieldset, input, textarea {
+fieldset,
+input,
+textarea {
     margin-bottom: 2%;
 }
 
@@ -194,7 +212,9 @@ footer a {
 }
 
 /*Media Query for Tablet Viewport*/
-@media screen and (min-width: 645px), print {
+@media screen and (min-width: 645px),
+print {
+
     /*Show tab-desk class, hide mobile class*/
     .tab-desk {
         display: block;
@@ -233,7 +253,9 @@ footer a {
 }
 
 /*Media Query for Desktop Viewport*/
-@media screen and (min-width: 1045px), print {
+@media screen and (min-width: 1045px),
+print {
+
     /*Desktop Viewport: Show desktop class, hide mobile-tablet class*/
     .desktop {
         display: block;
@@ -285,7 +307,8 @@ footer a {
         padding: 1%;
     }
 
-    th, td {
+    th,
+    td {
         border: 1px solid #2a1f14;
         padding: 1%;
     }
@@ -321,7 +344,7 @@ footer a {
     body {
         background: linear-gradient(#f6eee4, #78593a);
     }
-    
+
     #wrapper {
         width: 1920px;
         margin: 0 auto 0 auto;
