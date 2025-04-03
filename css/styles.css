@@ -1,5 +1,5 @@
-/*Author: Jaisharan Ashok Kumar
-  Date: 3/27/25
+/*Author: Jaisharan Ashok KUmar
+  Date: 4/3/25
   Filename: styles.css*/
 
 /*CSS Reset*/
@@ -43,7 +43,8 @@ video {
 }
 
 .tab-desk,
-.desktop {
+.desktop,
+#nav-links {
     display: none;
 }
 
@@ -52,6 +53,7 @@ video {
     padding: 2%;
     text-align: center;
     font-family: Emblema One;
+    margin: 2% 0 0 3%;
 }
 
 .mobile h3 {
@@ -66,24 +68,30 @@ nav {
     background-color: #2a1f14;
 }
 
-nav ul {
-    list-style-type: none;
+
+.mobile-nav a {
+    color: #fff;
     text-align: center;
-}
-
-nav li {
-    display: block;
-    border-top: 0.5px #f6eee4;
-    font-size: 1.5em;
-    font-family: Geneva, Arial, sans-serif;
-    font-weight: bold;
-}
-
-nav li a {
-    display: block;
-    color: #f6eee4;
+    font-size: 2em;
     text-decoration: none;
-    padding: 0.5em 2em 0.5em 2em;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f6eee4;
+    padding: 2%;
+    cursor: pointer;
+}
+
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #2a1f14;
 }
 
 /*Style rules for main content*/
@@ -166,6 +174,21 @@ figcaption {
     font-weight: bold;
 }
 
+#questions p {
+    cursor: pointer;
+}
+
+#answer {
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#answer h2 {
+    display: none;
+}
+
 /*Syle rules for form elements*/
 fieldset,
 input,
@@ -220,7 +243,8 @@ print {
         display: block;
     }
 
-    .mobile {
+    .mobile,
+    .mobile-nav {
         display: none;
     }
 
@@ -229,10 +253,15 @@ print {
         border-top: none;
         display: inline-block;
         font-size: 1.25em;
+        font-family: Geneva, Arial, sans-serif;
+        font-weight: bold;
     }
 
     nav li a {
         padding: 0.5em;
+        display: block;
+        color: #f6eee4;
+        text-decoration: none;
     }
 
     .grid {
@@ -243,6 +272,11 @@ print {
 
     aside {
         grid-column: 1 / span 2;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
     }
 
     /*Tablet Viewport: Style rule for form element*/
