@@ -2,13 +2,15 @@
 <!--
     Student Name: Jaisharan Ashok Kumar
     File Name: faqs.html
-    Date: 4/3/25
+    Date: 4/10/25
 -->
 <html lang="en">
+
 <head>
-    <title>Wild Rescues: FAQs</title>
+    <title>FAQs | Wild Rescues</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Get answers to our most frequently asked questions.">
+    <link rel="stylesheet" href="css/styles.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +20,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
 </head>
+
 <body>
+    <!-- Skip to Content Link -->
+    <a class="Skip" href="#content">Skip to Content</a>
+
     <div id="wrapper">
         <!-- Mobile Nav-->
         <nav class="mobile-nav">
@@ -48,22 +54,23 @@
 
         <!--Nav contains navigation links to rest of site-->
         <nav class="tab-desk">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="partnership.html">Partnership</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
 
         <!--Contains main homepage contents-->
-        <main>
+        <main id="content">
             <div id="questions">
                 <p onclick="ans1()">How can I determine if a baby animal is an orphan?</p>
                 <p onclick="ans2()">How can I tell if an animal has rabies?</p>
-                <p onclick="ans3()">I found a baby bird that fell from its nest. Will the parents orphan it if I touch it?</p>
+                <p onclick="ans3()">I found a baby bird that fell from its nest. Will the parents orphan it if I touch
+                    it?</p>
                 <p onclick="ans4()">How can I volunteer?</p>
             </div>
             <div id="answer">
@@ -74,10 +81,17 @@
 
         <!--Footer elements-->
         <footer>
-            <p>&copy; Copyright 2025. All Rights Reserved.</p>
-            <p><a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a></p>
+            <div class="copyright">
+                <p>&copy; Copyright 2025. All Rights Reserved.</p>
+                <p><a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a></p>
+            </div>
+            <div class="social">
+                <img src="images/facebook-logo.png" alt="Facebook logo">
+                <img src="images/twitter-logo.png" alt="Twitter logo">
+            </div>
         </footer>
     </div>
     <script src="scripts/scripts.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,5 @@
-/*Author: Jaisharan Ashok Kumar
-  Date: 4/10/25
+/*Author: Jaisharan Ashok KUmar
+  Date: 4/3/25
   Filename: styles.css*/
 
 /*CSS Reset*/
@@ -31,23 +31,6 @@ img,
 video {
     max-width: 100%;
     display: block;
-}
-
-/* Style rules for skip navigation link */
-.skip {
-    position: absolute;
-    left: -999px;
-}
-
-.skip:focus {
-    color: #fff;
-    background-color: #2a1f14;
-    text-decoration: none;
-    padding: 0.5%;
-    top: auto;
-    left: auto;
-    right: 1px;
-    z-index: 1;
 }
 
 /*Style rules for mobile viewport*/
@@ -251,11 +234,6 @@ footer a {
     text-decoration: none;
 }
 
-.social img {
-    display: inline-block;
-    padding: 4%;
-}
-
 /*Media Query for Tablet Viewport*/
 @media screen and (min-width: 645px),
 print {
@@ -305,21 +283,6 @@ print {
     form {
         width: 70%;
         margin: 0 auto 0 auto;
-    }
-
-    /*Tablet Viewport: Style rules for footer area */
-    footer {
-        overflow: auto;
-    }
-
-    .copyright {
-        float: left;
-        width: 65%;
-    }
-
-    .social {
-        float: right;
-        width: 25%;
     }
 }
 
