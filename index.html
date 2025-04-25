@@ -1,111 +1,118 @@
-<!DOCTYPE html>
-<!--
-    Student Name: Jaisharan Ashok Kumar
-    File Name: Wild Rescues index.html
-    Date: 4/10/25
+<!doctype html>
+<!-- Author: Jaisharan Ashok Kumar
+     Date: 4/24/25
+     Filename: index.html
 -->
-<html lang="en">
 
-<head>
-    <title>Wildlife Rescue | Wild Rescues</title>
+<!doctype html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <meta name="description"
-        content="Wild Rescues is a local nonprofit organization dedicated to helping injured, neglected, or orphaned wildlife.">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <meta name="description" content="Wild Rescues is a local nonprofit organization dedicated to helping injured, neglected, or orphaned wildlife.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&display=swap" rel="stylesheet">
+    <title>Wildlife Rescue | Wild Rescues</title>
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
-</head>
 
-<body>
-    <!-- Skip to Content Link -->
-    <a class="Skip" href="#content">Skip to Content</a>
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <div id="wrapper">
-        <!-- Mobile Nav-->
-        <nav class="mobile-nav">
-            <div id="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="partnership.html">Partnership</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="faqs.html">FAQs</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-            <a class="nav-icon" onclick="hamburger()">
-                <div id="icon">&#9776;</div>
-            </a>
-        </nav>
+    <!-- local css stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
 
-        <!--Enter header information such as logo or Website Name-->
-        <header>
-            <div class="tab-desk">
-                <a href="index.html"><img src="images/baby-hawk.jpg" alt="rescued baby hawk"></a>
-            </div>
-            <div class="mobile">
-                <h1>&#128062; Wild Rescues</h1>
-                <h3>Rescue. Rehabilitate. Release.</h3>
-            </div>
-        </header>
+  </head>
+  <body>
+    <!-- Bootstrap Navigation bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-brown">
 
-        <!--Nav contains navigation links to rest of site-->
-        <nav class="tab-desk">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="partnership.html">Partnership</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <a class="navbar-brand" href="index.html">Wild Rescues</a>
+
+        <!-- Hamburger menu icon -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#.html">Partnership</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#.html">Contact</a>
+                </li>
             </ul>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- Use the main area to add the main content to the webpage -->
-        <main id="content">
-            <div id="welcome">
-                <p>Welcome to Wild Rescues. Our mission is to rescue, rehabilitate,
-                    and release wildlife back into their natural environment. We are a
-                    nonprofit organization dedicated to helping injured wildlife.
-                </p>
+    <!-- Header and Hero Image -->
+    <header class="jumbotron jumbotron-fluid hero">
+        <div class="container welcome">
+            <h1 class="display-1 font-weight-bolder">Wild Rescues</h1>
+            <p class="lead font-weight-bold">Rescue. Rehabilitate. Release.</p>
+            <a href="#.html" role="button" class="btn btn-outline-secondary btn-lg text-white bg-brown">Partner with Us</a>
+        </div>
+    </header>
 
-                <p>Our staff provides around-the-clock care for wildlife in need. We
-                    also provide long-term care for wildlife that cannot be released back
-                    into their natural environment.
-                </p>
-
-                <p>Will you partner with us? We need caring volunteers to help care
-                    for our animals. You can also donate, become a member, or become a
-                    sponsor. Contact us today.
-                </p>
+    <!-- Main Content Area -->
+    <main class="container-fluid mt-5">
+        <div class="row">
+            
+            <div class="col-sm-4">
+                <h1>About Us</h1>
+                <p class="lead">We are a nonprofit organization dedicated to helping injured wildlife.</p>
+                <figure>
+                    <a href="#.html"><img src="images/baby-raccoons.jpg" alt="hands holding three baby raccoons" class="img-fluid rounded"></a>
+                </figure>
             </div>
 
-            <div id="latest">
-                <h2>Our Latest Rescue: Baby Raccoons,</h2>
-                <img class="round" src="images/baby-raccoons.jpg" alt="hands holding three baby raccoons">
-                <p>Meet our latest rescues, Fizz, Bandit, and Mohawk. These three little guys
-                    were found abandoned near a home.
-                </p>
+            <div class="col-sm-4">
+                <h1>Partnership</h1>
+                <p class="lead">Partner with us. Become a member or a sponsor. We also need volunteers.</p>
+                <figure>
+                    <a href="#.html"><img src="images/blind-deer.jpg" alt="blind deer" class="img-fluid rounded"></a>
+                </figure>
             </div>
-        </main>
 
-        <!--Footer elements-->
-        <footer>
-            <div class="copyright">
-                <p>&copy; Copyright 2025. All Rights Reserved.</p>
-                <p><a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a></p>
+            <div class="col-sm-4">
+                <h1>Gallery</h1>
+                <p class="lead">We help many types of wildlife. Meet our rescued friends.</p>
+                <figure>
+                    <a href="#.html"><img src="images/tortoise.jpg" alt="tortoise eating vegetation" class="img-fluid rounded"></a>
+                </figure>
             </div>
-            <div class="social">
-                <img src="images/facebook-logo.png" alt="Facebook logo">
-                <img src="images/twitter-logo.png" alt="Twitter logo">
-            </div>
-        </footer>
-    </div>
-    <script src="scripts/scripts.js"></script>
-</body>
 
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="jumbotron-fluid text-center p-5 bg-brown">
+        <div class="container text-white">
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <p><a href="mailto:contact@wildrescues.net" class="text-white">contact@wildrescues.net</a></p>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="white Facebook logo" class="pr-4"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="white Twitter logo"></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
