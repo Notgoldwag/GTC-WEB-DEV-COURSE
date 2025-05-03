@@ -1,118 +1,115 @@
-<!doctype html>
-<!-- Author: Jaisharan Ashok Kumar
-     Date: 4/24/25
-     Filename: index.html
--->
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Wild Rescues is a local nonprofit organization dedicated to helping injured, neglected, or orphaned wildlife.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wildlife Rescue | Wild Rescues</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+<head>
+    <!-- =================  Meta  ================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fusion Feast — a colourful fusion-cuisine restaurant. Come taste the rainbow!">
+    <meta name="keywords" content="restaurant, fusion, food, dining, colorful, menu, gallery">
+    <meta name="author" content="Fusion Feast Web Team">
 
-    <!-- bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Fusion Feast | Home</title>
 
-    <!-- local css stylesheet -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-  </head>
-  <body>
-    <!-- Bootstrap Navigation bar -->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-brown">
+<body id="top">
+    <!-- =========================================================
+     Navigation / Header
+     ======================================================= -->
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">Fusion Feast</a>
 
-        <a class="navbar-brand" href="index.html">Wild Rescues</a>
+            <!-- Mobile hamburger -->
+            <button class="toggle" aria-label="Open Menu">&#9776;</button>
 
-        <!-- Hamburger menu icon -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#.html">Partnership</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#.html">FAQs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#.html">Contact</a>
-                </li>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
             </ul>
-        </div>
-    </nav>
-
-    <!-- Header and Hero Image -->
-    <header class="jumbotron jumbotron-fluid hero">
-        <div class="container welcome">
-            <h1 class="display-1 font-weight-bolder">Wild Rescues</h1>
-            <p class="lead font-weight-bold">Rescue. Rehabilitate. Release.</p>
-            <a href="#.html" role="button" class="btn btn-outline-secondary btn-lg text-white bg-brown">Partner with Us</a>
-        </div>
+        </nav>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="container-fluid mt-5">
-        <div class="row">
-            
-            <div class="col-sm-4">
-                <h1>About Us</h1>
-                <p class="lead">We are a nonprofit organization dedicated to helping injured wildlife.</p>
-                <figure>
-                    <a href="#.html"><img src="images/baby-raccoons.jpg" alt="hands holding three baby raccoons" class="img-fluid rounded"></a>
-                </figure>
-            </div>
+    <!-- =========================================================
+     Main Content
+     ======================================================= -->
+    <main>
+        <!-- ----------  Hero  ---------- -->
+        <section class="hero">
+            <h1>Welcome to <span class="rainbow">Fusion Feast</span></h1>
+            <p>Where global flavours collide in dazzling colour.</p>
+            <a href="menu.html" class="btn primary">Explore the Menu</a>
+        </section>
 
-            <div class="col-sm-4">
-                <h1>Partnership</h1>
-                <p class="lead">Partner with us. Become a member or a sponsor. We also need volunteers.</p>
-                <figure>
-                    <a href="#.html"><img src="images/blind-deer.jpg" alt="blind deer" class="img-fluid rounded"></a>
-                </figure>
-            </div>
+        <!-- ----------  Highlights ---------- -->
+        <section class="highlights">
+            <h2>Why You'll Love Us</h2>
 
-            <div class="col-sm-4">
-                <h1>Gallery</h1>
-                <p class="lead">We help many types of wildlife. Meet our rescued friends.</p>
-                <figure>
-                    <a href="#.html"><img src="images/tortoise.jpg" alt="tortoise eating vegetation" class="img-fluid rounded"></a>
-                </figure>
-            </div>
+            <dl>
+                <dt><img src="images/fresh.png" alt="Fresh icon"> Farm-Fresh Ingredients</dt>
+                <dd>We source locally every single day.</dd>
+                <br>
 
-        </div>
+                <dt><img src="images/chef.png" alt="Chef icon"> Award-Winning Chefs</dt>
+                <dd>Our team boasts <em>Michelin-star</em> experience.</dd>
+
+                <br>
+
+                <dt><img src="images/ambience.png" alt="Ambience icon"> Vibrant Ambience</dt>
+                <dd>Rainbow décor & live music every night.</dd>
+            </dl>
+        </section>
+
+        <!-- ----------  Promo Video  ---------- -->
+        <section class="cta-video">
+            <h2>Take a Peek Inside</h2>
+            <!-- working video file (MP4 + WEBM) -->
+            <div class="video-frame">
+                <video controls poster="images/restaurant-tour-img.png">
+                    <source src="restaurant-tour.mp4" type="video/mp4">
+                    <!-- Fallback text -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- ----------  Reviews ---------- -->
+        <section class="reviews">
+            <h2>What Diners Are Saying</h2>
+            <ol>
+                <li>“Amazing food, no fuss.” — <cite>City Eats</cite></li>
+                <li>“Tasty and fun.” — <cite>Foodie Blog</cite></li>
+                <li>“Worth the trip.” — <cite>Local Times</cite></li>
+            </ol>
+        </section>
+
+        <!-- ----------  External reference  ---------- -->
+        <aside class="press">
+            <p>Featured in <a href="https://www.nytimes.com" target="_blank" rel="noopener">The New York Times</a>! 🎉
+            </p>
+        </aside>
     </main>
 
-    <!-- Footer -->
-    <footer class="jumbotron-fluid text-center p-5 bg-brown">
-        <div class="container text-white">
-            <p>&copy; Copyright 2021. All Rights Reserved.</p>
-            <p><a href="mailto:contact@wildrescues.net" class="text-white">contact@wildrescues.net</a></p>
-            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="white Facebook logo" class="pr-4"></a>
-            <a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="white Twitter logo"></a>
-        </div>
+    <!-- =========================================================
+     Footer
+     ======================================================= -->
+    <footer>
+        <p>&copy; <span id="year"></span> Fusion Feast •
+            <a href="mailto:reservations@fusionfeast.com">Email Us</a> •
+            <a href="#top">Back to top</a>
+        </p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="scripts/script.js"></script>
-  </body>
+    <!-- External JavaScript -->
+    <script src="scripts.js" defer></script>
+</body>
+
 </html>

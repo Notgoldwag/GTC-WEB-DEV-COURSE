@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ==========  Meta  ========== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Reserve a table, request a private event, or just say hello — contact Fusion Feast today.">
+    <meta name="keywords" content="fusion feast, contact, reservation, booking, event request, phone, email">
+    <meta name="author" content="Fusion Feast Web Team">
+
+    <title>Fusion Feast | Contact</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="top">
+    <!-- =========================================================
+     Header & Navigation
+     ======================================================= -->
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">Fusion Feast</a>
+            <button class="toggle" aria-label="Open Menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ----------  Anchor Nav   ---------- -->
+        <nav class="section-nav">
+            <a href="#info">Contact Info</a>
+            <a href="#booking-form">Table Booking</a>
+        </nav>
+
+        <!-- ----------  Contact Info  ---------- -->
+        <section id="info" class="contact-section">
+            <h2>Get in Touch</h2>
+            <address>
+                <p><strong>Phone:</strong> <a href="tel:+11112223333">(111) 222-3333</a></p>
+                <p><strong>Email:</strong> <a href="mailto:hello@fusionfeast.com">hello@fusionfeast.com</a></p>
+                <p><strong>Address:</strong> 123 Colour Ave, Spectrum City, NY 10001</p>
+            </address>
+            <p>Follow us on
+                <a href="https://instagram.com" target="_blank" rel="noopener">@fusionfeast</a> &
+                <a href="https://tiktok.com" target="_blank" rel="noopener">@fusionfeast</a>.
+            </p>
+        </section>
+
+        <!-- ----------  Table Booking Form  ---------- -->
+        <section id="booking-form" class="contact-section alt-bg">
+            <h2>Reserve a Table</h2>
+            <!-- NOTE: JS validation in scripts.js -->
+            <form action="https://example.com/reservations" method="post" class="form" novalidate>
+                <!-- Name -->
+                <label for="book-name">Name*</label>
+                <input type="text" id="book-name" name="name" required>
+
+                <!-- Email -->
+                <label for="book-email">Email*</label>
+                <input type="email" id="book-email" name="email" required>
+
+                <!-- Phone -->
+                <label for="book-phone">Phone</label>
+                <input type="tel" id="book-phone" name="phone" pattern="\d{10}" placeholder="5551234567">
+
+                <!-- Date -->
+                <label for="book-date">Date*</label>
+                <input type="date" id="book-date" name="date" required>
+
+                <!-- Time -->
+                <label for="book-time">Time*</label>
+                <input type="time" id="book-time" name="time" required>
+
+                <!-- Party Size (number) -->
+                <label for="book-size">Party Size*</label>
+                <input type="number" id="book-size" name="size" min="1" max="20" required>
+
+                <!-- Special Requests (textarea) -->
+                <label for="book-requests">Special Requests</label>
+                <textarea id="book-requests" name="requests" rows="4"
+                    placeholder="Allergies, celebrations, etc."></textarea>
+
+                <!-- Submit -->
+                <button type="submit" class="btn primary">Book Table</button>
+            </form>
+        </section>
+
+
+
+    <!-- =========================================================
+     Footer
+     ======================================================= -->
+    <footer>
+        <p>&copy; <span id="year"></span> Fusion Feast •
+            <a href="mailto:reservations@fusionfeast.com">Email Us</a> •
+            <a href="#top">Back to top</a>
+        </p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="scripts.js" defer></script>
+</body>
+
+</html>
